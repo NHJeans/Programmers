@@ -1,7 +1,7 @@
 function solution(num_list) {
     let newArray = [];
-    num_list.forEach((array) => {
-        newArray.unshift(array);
+    num_list.forEach((i) => {
+        newArray.unshift(i);
     });
     return newArray;
 }
