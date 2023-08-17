@@ -1,4 +1,5 @@
-function solution(s){
-    s = s.toLowerCase();
-    return s.split("p").length === s.split("y").length;
+function solution(s) {
+    let result = s.toLowerCase();
+    return result.split('p').length === result.split('y').length ? true : false
+    
 }
