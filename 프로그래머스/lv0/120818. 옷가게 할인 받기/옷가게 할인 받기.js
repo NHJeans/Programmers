@@ -1,10 +1,10 @@
 function solution(price) {
-    if(500000 <= price) {
-        price *= (0.80)
-    } else if(300000 <= price) {
-        price *= (0.90)
-    } else if(100000 <= price) {
-        price *= (0.95)
+    if (price >= 500000) {
+        price -= price * 0.2; // 20% 할인
+    } else if (price >= 300000) {
+        price -= price * 0.1; // 10% 할인
+    } else if (price >= 100000) {
+        price -= price * 0.05; // 5% 할인
     }
     return Math.floor(price);
 }
