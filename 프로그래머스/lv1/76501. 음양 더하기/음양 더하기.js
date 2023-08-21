@@ -1,7 +1,13 @@
 function solution(absolutes, signs) {
     let answer = 0;
-    for (let i = 0; i < absolutes.length; i++) {
-        (signs[i] > 0) ? answer += absolutes[i] : answer -= absolutes[i];
-    }
+    
+    absolutes.forEach((num, index) => {
+        if (signs[index]) {
+            answer += num;
+        } else {
+            answer -= num;
+        }
+    });
     return answer;
 }
+
